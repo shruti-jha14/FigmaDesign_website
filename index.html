@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenny — Product Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav nav--s" id="nav">
+    <a href="#" class="nav-logo">
+      <span class="logo-sq">
+        <img src="assets/logo.png" alt="">
+      </span>
+      JCREA
+    </a>
+
+    <nav class="nav-mid">
+      <a href="#home" class="nlink">Home</a>
+      <a href="#about" class="nlink">About</a>
+      <a href="#projects" class="nlink">Projects</a>
+      <a href="#blog" class="nlink">Blog</a>
+      <a href="#contact" class="nlink">Contact</a>
+    </nav>
+
+    <div class="nav-end">
+      <!-- JCREA badge pill -->
+      <span class="nav-badge">
+        <span class="badge-pulse"></span>
+        Search <b>Projects</b>
+      </span>
+
+      <!-- search — white circle outline -->
+      <button class="nc-btn" aria-label="Search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+      </button>
+
+      <!-- arrow — same white circle outline -->
+      <a href="#contact" class="nc-btn" aria-label="Go">
+        <div class="thin-arrow-circle">
+          <i class="fa fa-arrow-down"></i>
+        </div>
+
+      </a>
+
+      <button class="nav-ham" id="ham" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- mobile drawer -->
+  <div class="mob" id="mob">
+    <a href="#home" onclick="closeMob()">Home</a>
+    <a href="#about" onclick="closeMob()">About</a>
+    <a href="#projects" onclick="closeMob()">Projects</a>
+    <a href="#blog" onclick="closeMob()">Blog</a>
+    <a href="#contact" onclick="closeMob()">Contact</a>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="home">
+
+    <!-- background ambient glow -->
+    <div class="hero-glow"></div>
+
+    <h1 class="hero-h1">I'm <em>Jenny</em><br>
+      <span class="hero-dim">Product Designer</span>
+    </h1>
+
+    <!-- central figure: arch + rings + photo + doodles -->
+    <div class="figure">
+
+      <!-- orange semicircle arch -->
+      <div class="f-arch"></div>
+
+      <!-- concentric ring lines -->
+      <div class="f-rings">
+        <div class="f-ring"></div>
+        <div class="f-ring"></div>
+        <div class="f-ring"></div>
+        <div class="f-ring"></div>
+        <div class="f-ring"></div>
+      </div>
+
+      <!-- photo clipped to arch shape -->
+      <img class="f-photo" src="assets/girl_.png" alt="Jenny" />
+
+      <!-- purple doodles SVG -->
+      <svg class="f-doodle1" viewBox="0 0 460 460" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#7c3aed" fill="none" stroke-width="7.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M230 230 q25-25 42-6 q22 22-6 46 q-34 28-62-6 q-32-40 12-72 q50-37 88 6" />
+          <path d="M90 110 l4-10 4 10-9-6h10" />
+          <path d="M355 80  l4-10 4 10-9-6h10" />
+          <path d="M360 320 l4-10 4 10-9-6h10" />
+          <path d="M100 320 q-22-32 10-42 q32-10 22 22" />
+          <path d="M370 200 l4-10 4 10-9-6h10" />
+          <path d="M320 145 q16-26 32-10 q16 16-6 26" />
+          <ellipse cx="355" cy="275" rx="22" ry="8" transform="rotate(-20 355 275)" />
+          <circle cx="355" cy="275" r="5" />
+          <path d="M70 270  l4-10 4 10-9-6h10" />
+          <path d="M80 190 q-9-13 0-16 q9-3 9 7 q0-10 9-7 q9 3 0 16 l-9 11z" />
+          <path d="M125 68 l32-11-11 16-5-5z M148 57 l-14 22" />
+        </g>
+      </svg>
+
+      <svg class="f-doodle2" viewBox="0 0 460 460" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#7c3aed" fill="none" stroke-width="7.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M230 230 q25-25 42-6 q22 22-6 46 q-34 28-62-6 q-32-40 12-72 q50-37 88 6" />
+          <path d="M90 110 l4-10 4 10-9-6h10" />
+          <path d="M355 80  l4-10 4 10-9-6h10" />
+          <path d="M360 320 l4-10 4 10-9-6h10" />
+          <path d="M100 320 q-22-32 10-42 q32-10 22 22" />
+          <path d="M370 200 l4-10 4 10-9-6h10" />
+          <path d="M320 145 q16-26 32-10 q16 16-6 26" />
+          <ellipse cx="355" cy="275" rx="22" ry="8" transform="rotate(-20 355 275)" />
+          <circle cx="355" cy="275" r="5" />
+          <path d="M70 270  l4-10 4 10-9-6h10" />
+          <path d="M80 190 q-9-13 0-16 q9-3 9 7 q0-10 9-7 q9 3 0 16 l-9 11z" />
+          <path d="M125 68 l32-11-11 16-5-5z M148 57 l-14 22" />
+        </g>
+      </svg>
+
+    </div><!-- /figure -->
+
+    <!-- floating cards -->
+    <div class="f-card f-card--l">
+      <span class="qmark">"</span>
+      <p>Jenny's Exceptional product design ensured our website's success. Highly Recommended.</p>
+    </div>
+
+    <div class="f-card f-card--r">
+      <div class="fc-stars">★★★★★</div>
+      <div class="fc-big">10 Years</div>
+      <div class="fc-sub">Experience</div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="about" id="about">
+
+    <div class="about-img">
+      <div class="ai-rings">
+        <div class="ai-r"></div>
+        <div class="ai-r"></div>
+        <div class="ai-r"></div>
+        <div class="ai-r"></div>
+      </div>
+      <img src="assets/girl.png" alt="Jenny" class="ai-photo" />
+    </div>
+
+    <div class="about-txt">
+      <span class="stag">About Me</span>
+      <h2>Turning ideas into <em>beautiful</em> products</h2>
+      <p>I'm a UI/UX designer who turns complicated problems into "Wow, that's easy!" experiences. 10 years of crafting
+        digital products that people actually enjoy using — quality design is in my DNA.</p>
+
+      <div class="about-nums">
+        <div><strong>10+</strong><span>Years Exp.</span></div>
+        <div><strong>80+</strong><span>Projects</span></div>
+        <div><strong>40+</strong><span>Happy Clients</span></div>
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn-portfolio">
+          Portfolio
+          <span class="btn-arrow">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </span>
+        </a>
+        <a href="#" class="btn-hire">Hire me</a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ═══ TICKER 1 ═══ -->
+  <div class="ticker">
+    <div class="ticker-outer-box">
+      <div class="ticker-track">
+        <span>UX Design<b> ✦ </b></span><span>App Design<b> ✦ </b></span><span>Dashboard<b> ✦
+          </b></span><span>Wireframe<b> ✦ </b></span><span>User Research<b> ✦ </b></span><span>Branding<b> ✦
+          </b></span><span>Prototyping<b> ✦ </b></span>
+        <span>UX Design<b> ✦ </b></span><span>App Design<b> ✦ </b></span><span>Dashboard<b> ✦
+          </b></span><span>Wireframe<b> ✦ </b></span><span>User Research<b> ✦ </b></span><span>Branding<b> ✦
+          </b></span><span>Prototyping<b> ✦ </b></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <div class="projectsBg">
+    <section class="projects" id="projects">
+    <div class="sec-hd">
+      <div>
+        <span class="stag">My Work</span>
+        <h2>Selected <em>Projects</em></h2>
+      </div>
+      <a href="#contact" class="nc-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="pgrid">
+
+      <article class="pcard pcard--wide">
+        <div class="pc-img">
+          <img src="assets/foodApp.png" alt="">
+        </div>
+        <div class="pc-overlay">
+          
+          <h3>Calathea — Food App</h3>
+          <p>Minimal food-ordering dashboard with intuitive navigation and smooth checkout flow.</p>
+        </div>
+        <a href="#" class="pc-arrow" aria-label="View">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </article>
+
+      <article class="pcard">
+        <div class="pc-img">
+          <img src="assets/musicApp.png" alt="">
+        </div>
+        <div class="pc-overlay">
+          
+          <h3>Musicly App</h3>
+          <p>Glassmorphic music streaming UI with fluid micro-interactions.</p>
+        </div>
+        <a href="#" class="pc-arrow" aria-label="View">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </article>
+
+      <article class="pcard">
+        <div class="pc-img">
+          <img src="assets/tropicalShop.png" alt="">
+        </div>
+        <div class="pc-overlay">
+          
+          <h3>TropicalShop Website</h3>
+          <p>Plant e-commerce brand identity, web design and component system.</p>
+        </div>
+        <a href="#" class="pc-arrow" aria-label="View">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </article>
+
+    </div>
+  </section>
+  </div>
+
+
+  <!-- ═══ BLOG ═══ -->
+  <div class="blogBg">
+    <section class="blog" id="blog">
+    <div class="sec-hd">
+      <div>
+        <span class="stag">Articles</span>
+        <h2>From the <em>Blog</em></h2>
+      </div>
+    </div>
+
+    <div class="blog-grid">
+
+      <article class="bcard bcard--feat">
+        <div class="bc-img bc-img--a">
+          <img src="assets/uiUx.png" alt="">
+
+        </div>
+        <div class="bc-body">
+          <span class="ptag">UI/UX Design</span>
+          <div class="bc-meta"><span class="bm-dot"></span>Jayesh Patil <span class="sep">●</span> 10 Nov, 2023</div>
+          <h3>Design Unraveled: Behind the Scenes of UI/UX Magic</h3>
+
+          <a href="#" class="pc-arrow" aria-label="View">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </a>
+        </div>
+      </article>
+
+      <div class="blog-col">
+        <article class="bcard">
+          <div class="bc-img bc-img--b">
+            <img src="assets/brand.png" alt="">
+          </div>
+          <div class="bc-body">
+            <span class="ptag">UI/UX Design</span>
+            <div class="bc-meta"><span class="bm-dot"></span>Jayesh Patil <span class="sep">●</span> 8 Nov, 2023</div>
+            <h3>How Good Branding Shapes User Trust</h3>
+          </div>
+
+          <a href="#" class="pc-arrow" aria-label="View">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </a>
+        </article>
+
+        <article class="bcard">
+          <div class="bc-img bc-img--c">
+            <img src="assets/wireframing.png" alt="">
+          </div>
+          <div class="bc-body">
+            <span class="ptag">Branding</span>
+            <div class="bc-meta"><span class="bm-dot"></span>Jayesh Patil <span class="sep">●</span> 5 Nov, 2023</div>
+            <h3>Wireframing Tips Every Designer Should Know</h3>
+          </div>
+
+          <a href="#" class="pc-arrow" aria-label="View">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+      </a>
+        </article>
+      </div>
+
+    </div>
+  </section>
+  </div>
+
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section class="testi">
+    <div class="sec-hd sec-hd--c">
+      <span class="stag">Reviews</span>
+      <h2>What Clients <em>Say</em></h2>
+    </div>
+
+    <div class="tgrid">
+
+      <div class="tcard">
+        <div class="tc-top">
+          <div class="tc-av" style="background:#FF6B35">JP</div>
+          <div><strong>Jayesh Patil</strong><span>CEO, Lrante</span></div>
+          <div class="tc-qq">"</div>
+        </div>
+        <div class="tc-stars">★★★★★ <b>5.0</b></div>
+        <p>Consectetur adipiscing elit. Sed conque interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Sed lobortis orci elementum egestas.</p>
+      </div>
+
+      <div class="tcard">
+        <div class="tc-top">
+          <div class="tc-av" style="background:#7c3aed">SM</div>
+          <div><strong>Sara Mitchell</strong><span>Founder, PixelLabs</span></div>
+          <div class="tc-qq">"</div>
+        </div>
+        <div class="tc-stars">★★★★★ <b>5.0</b></div>
+        <p>Consectetur adipiscing elit. Sed conque interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Sed lobortis orci elementum egestas.</p>
+      </div>
+
+      <div class="tcard">
+        <div class="tc-top">
+          <div class="tc-av" style="background:#059669">MK</div>
+          <div><strong>Mike Kramer</strong><span>CTO, DevHouse</span></div>
+          <div class="tc-qq">"</div>
+        </div>
+        <div class="tc-stars">★★★★★ <b>5.0</b></div>
+        <p>Consectetur adipiscing elit. Sed conque interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Sed lobortis orci elementum egestas.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ TICKER 2 (reversed) ═══ -->
+  <div class="ticker ticker--rev">
+    <div class="ticker-outer-box">
+      <div class="ticker-track">
+        <span>UX Design<b> ✦ </b></span><span>App Design<b> ✦ </b></span><span>Dashboard<b> ✦
+          </b></span><span>Wireframe<b> ✦ </b></span><span>User Research<b> ✦ </b></span><span>Branding<b> ✦
+          </b></span><span>Prototyping<b> ✦ </b></span>
+        <span>UX Design<b> ✦ </b></span><span>App Design<b> ✦ </b></span><span>Dashboard<b> ✦
+          </b></span><span>Wireframe<b> ✦ </b></span><span>User Research<b> ✦ </b></span><span>Branding<b> ✦
+          </b></span><span>Prototyping<b> ✦ </b></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer" id="contact">
+    <div class="ft-inner">
+      <div class="ft-brand">
+        <span class="logo-sq">
+          <img src="assets/logo.png" alt="">
+        </span>
+        <span class="ft-name">JCREA</span>
+      </div>
+      <div class="ft-right">
+        <a href="https://instagram.com" class="ft-ig" target="_blank" rel="noopener">
+          <i class="fa fa-instagram"></i>
+        </a>
+
+        <p class="ft-bio">I'm a UI/UX designer — basically, I turn complicated into "Wow, that's easy!" while making it
+          look stunning. Quality work? It's in my design DNA!</p>
+
+        <a href="https://instagram.com" class="ft-follow" target="_blank" rel="noopener">
+          Follow me on Instagram
+        </a>
+
+      </div>
+    </div>
+    <!-- <div class="ft-bar">
+    <span>© 2024 Jenny · All rights reserved</span>
+    <span>Made with ♥ by iCREA</span>
+  </div> -->
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
